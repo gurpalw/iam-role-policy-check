@@ -5,8 +5,8 @@ import time
 from botocore.exceptions import ClientError
 
 iam = boto3.resource('iam')
-
 instance_profiles = iam.instance_profiles.all()
+
 client = boto3.client('iam')
 
 allRoles = []
